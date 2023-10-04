@@ -25,7 +25,7 @@ public class AggregatorController {
     @Autowired
     private CustomerClient customerClient;
 
-    @GetMapping("/{id}")
+    @GetMapping("/orders/{id}")
     public AggregateData aggregate(@PathVariable Integer id) {
         Orders order = orderClient.getOrderById(id);
         Product product = productClient.getProduct(id);

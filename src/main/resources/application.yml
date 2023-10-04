@@ -1,9 +1,5 @@
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-  instance:
-    preferIpAddress: true
-  registerWithEureka: true
-  fetchRegistry: true
+server:
+  port: 9090
+spring:
+  application:
+    name: aggregator-service
